@@ -2,11 +2,11 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/151f3e5a6b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estilo.css">
+    <title>Index</title>
     
 
 </head>
@@ -15,19 +15,56 @@
         <figure>
             <img src="imagens/bolo.png" alt="bolo">
         </figure>
+        
         <nav>
+
             <ul class="nav">
                 <li class="nav-item"><a href="#" class="nav-item active">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link ">Contatos</a></li>
-                <li class="nav-item"><a href="#" class="nav-link ">Sobre nós</a></li>
-                <li class="nav-item"><a href="#" class="nav-link ">Entrar</a></li>
-            </ul>
+                <li class="nav-item"><a href="#" class="nav-link">Serviços</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contatos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre nós</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Entrar</a></li>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </ul>           
         </nav>
     </header>
 
-    <main>
-        <h1>Empresa de bolo</h1>
-    </main>
+<main>
+    <div id="conteudo" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#conteudo" data-slide-to="0" class="active"></li>
+                    <li data-target="#conteudo" data-slide-to="1"></li>
+                    <li data-target="#conteudo" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img src="imagens/sorvetesMCC.jpg" class="d-block w-100" alt="sorvetemmc">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="imagens/sorvete.jpg" class="d-block w-100" alt="sorvete">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="imagens/conteudosorvete.jpg" class="d-block w-100" alt="conteudosorvete">
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-target="conteudo" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previuos</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-target="conteudo" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </button>
+    </div>
+</main>
     <footer>
         <h2>Rodapé</h2>
     </footer>
